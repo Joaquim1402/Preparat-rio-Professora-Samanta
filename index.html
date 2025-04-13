@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preparatório Professora Samanta</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .bg-gradient-orange {
+      background: linear-gradient(to right, #f97316, #fb923c);
+    }
+    .text-gradient-orange {
+      background: linear-gradient(to right, #f97316, #fb923c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .section-box {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-gradient-orange">Preparatório Professora Samanta</h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#cursos" class="text-gray-700 hover:text-orange-500 transition">Cursos</a>
+        <a href="#professores" class="text-gray-700 hover:text-orange-500 transition">Professores</a>
+        <a href="#sobre" class="text-gray-700 hover:text-orange-500 transition">Sobre Nós</a>
+        <a href="#contato" class="text-gray-700 hover:text-orange-500 transition">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-orange py-24 text-center text-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-4">Prepare-se para a ETE, IF e domine a Redação!</h2>
+      <p class="text-lg mb-6">Cursos direcionados, professores experientes e conteúdo atualizado para sua aprovação.</p>
+      <a href="#cursos" class="inline-block bg-white text-orange-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-900 transition">Conheça os Cursos</a>
+    </div>
+  </section>
+
+  <!-- Cursos -->
+  <section id="cursos" class="py-20 max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold mb-12 text-center text-orange-600">Cursos Oferecidos</h3>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-white shadow-lg rounded-xl p-8 border border-gray-200 hover:shadow-xl transition">
+        <h4 class="text-2xl font-bold text-gray-800 mb-4">Curso Preparatório ETE/IF</h4>
+        <p class="text-gray-600 mb-6">Preparação completa para escolas técnicas com foco em matemática, português, simulados e suporte contínuo.</p>
+        <a href="#contato" class="text-orange-600 font-medium hover:underline">Quero me matricular</a>
+      </div>
+      <div class="bg-white shadow-lg rounded-xl p-8 border border-gray-200 hover:shadow-xl transition">
+        <h4 class="text-2xl font-bold text-gray-800 mb-4">Redação do Zero</h4>
+        <p class="text-gray-600 mb-6">Curso dedicado a ensinar técnicas de estruturação, argumentação e linguagem para redações nota 1000.</p>
+        <a href="#contato" class="text-orange-600 font-medium hover:underline">Quero me matricular</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professores -->
+  <section id="professores" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-12 text-center text-orange-600">Nossos Professores</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <img src="joaquim.jpeg" alt="Foto Professor">
+          <h4 class="text-lg font-bold">Prof. Joaquim Fragoso</h4>
+          <p class="text-sm text-gray-600">Professor de Matemática. </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <img src="samanta.jpeg" alt="Foto Professora">
+          <h4 class="text-lg font-bold">Profa. Samanta Carolina</h4>
+          <p class="text-sm text-gray-600">Professora de Redação e Língua Portuguesa.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <img src="edvan.jpeg" alt="Foto Professora">
+          <h4 class="text-lg font-bold">Prof. Edvan Santos</h4>
+          <p class="text-sm text-gray-600">Professor de Conhecimentos Gerais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center section-box p-8">
+      <h3 class="text-3xl font-semibold mb-6 text-orange-600">Sobre Nós</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">Somos um cursinho preparatório com foco total em resultados. Com professores experientes, metodologia ativa e ambiente acolhedor, já ajudamos centenas de alunos a conquistarem vagas em escolas técnicas e a desenvolverem redações de excelência.</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-gradient-orange py-20 px-6 text-white">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Fale Conosco</h3>
+      <form class="space-y-5">
+        <input type="text" placeholder="Seu nome" class="w-full p-4 rounded bg-white text-gray-800 focus:outline-none" required />
+        <input type="email" placeholder="Seu e-mail" class="w-full p-4 rounded bg-white text-gray-800 focus:outline-none" required />
+        <textarea placeholder="Sua mensagem" class="w-full p-4 rounded bg-white text-gray-800 h-32 focus:outline-none" required></textarea>
+        <button type="submit" class="w-full bg-white text-orange-600 font-bold py-3 rounded hover:bg-gray-500 transition">Enviar Mensagem</button>
+      </form>
+      <div class="text-center mt-8">
+        <p class="text-sm">Ou fale direto no WhatsApp:</p>
+        <a href="https://wa.me/5581986166197" class="text-white font-bold underline">(81) 98616-6197</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p class="text-sm">Siga-nos no Instagram: <a href="https://www.instagram.com/profsamantapreparatorios?igsh=MTlwMGt1Zmg0M3l6Zg==" class="font-bold text-orange-500 underline" target="_blank">@profsamantapreparatorios</a></p>
+  </footer>
+</body>
+</html>
